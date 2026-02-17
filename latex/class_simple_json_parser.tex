@@ -1,0 +1,72 @@
+\doxysection{Simple\+Json\+Parser Class Reference}
+\hypertarget{class_simple_json_parser}{}\label{class_simple_json_parser}\index{SimpleJsonParser@{SimpleJsonParser}}
+
+
+Простой парсер JSON.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_simple_json_parser_aac1f1816de5a8a18a3de2a414dc0b332}{Simple\+Json\+Parser}} (const string \&str)
+\begin{DoxyCompactList}\small\item\em Конструктор класса, принимает ответ от сервера \end{DoxyCompactList}\item 
+map$<$ string, int $>$ \doxymbox{\hyperlink{class_simple_json_parser_ae36022b80ed7f13eca36dec220c47b6d}{count\+Subjects}} ()
+\begin{DoxyCompactList}\small\item\em Парсим массив объектов и извлекаем значения subject\+\_\+name. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_simple_json_parser_a488277eabb1a7d60a8fb72d28c02315e}{get\+Raw\+Json}} ()
+\begin{DoxyCompactList}\small\item\em Получить сырой JSON для сохранения \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Простой парсер JSON. 
+
+Парсит только json код для расписания, не работает с дригими вариациями 
+
+\label{doc-constructors}
+\Hypertarget{class_simple_json_parser_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_simple_json_parser_aac1f1816de5a8a18a3de2a414dc0b332}\index{SimpleJsonParser@{SimpleJsonParser}!SimpleJsonParser@{SimpleJsonParser}}
+\index{SimpleJsonParser@{SimpleJsonParser}!SimpleJsonParser@{SimpleJsonParser}}
+\doxysubsubsection{\texorpdfstring{SimpleJsonParser()}{SimpleJsonParser()}}
+{\footnotesize\ttfamily \label{class_simple_json_parser_aac1f1816de5a8a18a3de2a414dc0b332} 
+Simple\+Json\+Parser::\+\+Simple\+Json\+Parser (\begin{DoxyParamCaption}\item[{const string \&}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор класса, принимает ответ от сервера 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_simple_json_parser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_simple_json_parser_ae36022b80ed7f13eca36dec220c47b6d}\index{SimpleJsonParser@{SimpleJsonParser}!countSubjects@{countSubjects}}
+\index{countSubjects@{countSubjects}!SimpleJsonParser@{SimpleJsonParser}}
+\doxysubsubsection{\texorpdfstring{countSubjects()}{countSubjects()}}
+{\footnotesize\ttfamily \label{class_simple_json_parser_ae36022b80ed7f13eca36dec220c47b6d} 
+map$<$ string, int $>$ Simple\+Json\+Parser::\+count\+Subjects (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Парсим массив объектов и извлекаем значения subject\+\_\+name. 
+
+\begin{DoxyReturn}{Returns}
+словарь с отсортированными данными по расписанию 
+\end{DoxyReturn}
+\Hypertarget{class_simple_json_parser_a488277eabb1a7d60a8fb72d28c02315e}\index{SimpleJsonParser@{SimpleJsonParser}!getRawJson@{getRawJson}}
+\index{getRawJson@{getRawJson}!SimpleJsonParser@{SimpleJsonParser}}
+\doxysubsubsection{\texorpdfstring{getRawJson()}{getRawJson()}}
+{\footnotesize\ttfamily \label{class_simple_json_parser_a488277eabb1a7d60a8fb72d28c02315e} 
+string Simple\+Json\+Parser::\+get\+Raw\+Json (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получить сырой JSON для сохранения 
+
+\begin{DoxyReturn}{Returns}
+json код ответа сервера, без спец символов 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{16_802_826_8cpp}{16.\+02.\+26.\+cpp}}\end{DoxyCompactItemize}
