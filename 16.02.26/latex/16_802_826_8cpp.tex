@@ -1,0 +1,77 @@
+\doxysection{16.02.26.cpp File Reference}
+\hypertarget{16_802_826_8cpp}{}\label{16_802_826_8cpp}\index{16.02.26.cpp@{16.02.26.cpp}}
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include $<$map$>$}\newline
+{\ttfamily \+\#include $<$fstream$>$}\newline
+{\ttfamily \+\#include $<$sstream$>$}\newline
+{\ttfamily \+\#include $<$regex$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$cstdio$>$}\newline
+{\ttfamily \+\#include $<$Windows.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_simple_json_parser}{Simple\+Json\+Parser}}
+\begin{DoxyCompactList}\small\item\em Простой парсер JSON. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \doxymbox{\hyperlink{16_802_826_8cpp_a7e0893b75b8a7b5db7e630eb1facf277}{http\+Get}} (const string \&url, const vector$<$ string $>$ \&headers)
+\begin{DoxyCompactList}\small\item\em Простая функция для HTTP GET запроса через системные вызовы (для Windows). \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{16_802_826_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Запуск программы, запрашивает bearer у пользователя и выводит результат по поиску на экран \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{16_802_826_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{16_802_826_8cpp_a7e0893b75b8a7b5db7e630eb1facf277}\index{16.02.26.cpp@{16.02.26.cpp}!httpGet@{httpGet}}
+\index{httpGet@{httpGet}!16.02.26.cpp@{16.02.26.cpp}}
+\doxysubsubsection{\texorpdfstring{httpGet()}{httpGet()}}
+{\footnotesize\ttfamily \label{16_802_826_8cpp_a7e0893b75b8a7b5db7e630eb1facf277} 
+string http\+Get (\begin{DoxyParamCaption}\item[{const string \&}]{url}{, }\item[{const vector$<$ string $>$ \&}]{headers}{}\end{DoxyParamCaption})}
+
+
+
+Простая функция для HTTP GET запроса через системные вызовы (для Windows). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & Ссылка запроса \\
+\hline
+{\em headers} & Вектор с заголовками для запроса \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Строка с ответом от сервера, или пустая строка 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Эта функция работает только на windows OC 
+\end{DoxyNote}
+\Hypertarget{16_802_826_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{16.02.26.cpp@{16.02.26.cpp}!main@{main}}
+\index{main@{main}!16.02.26.cpp@{16.02.26.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{16_802_826_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Запуск программы, запрашивает bearer у пользователя и выводит результат по поиску на экран 
+
+\begin{DoxyNote}{Note}
+url и референс для headers меняются в коде 
+\end{DoxyNote}
+Ссылка определенный хедер на сайте
+
+Вектор хедеров
+
+Bearer у хедера на сайте
+
+Результат поиска
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & для сортировки результатов парсинга результата и последующего извлечения из него отсортированного ответа\\
+\hline
+\end{DoxyParams}
